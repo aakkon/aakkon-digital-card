@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AAKKON | Digital Card</title>
+
+  <link rel="icon" href="assets/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="page">
+
+    <header class="topbar">
+      <a class="brand" href="#">
+        <img class="brand-full" src="assets/brand-transparent.png" alt="AAKKON" />
+      </a>
+
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="https://github.com/aakkon" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/pere-cortijos-navarro-ab0b01172/" target="_blank">LinkedIn</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <img class="hero-logo" src="assets/logo-main-transparent.png" alt="AAKKON logo" />
+
+      <p class="eyebrow">
+        Building, Exploring and Sharing
+      </p>
+
+      <h1>Systems that evolve. Foundations that last.</h1>
+
+      <p class="intro main-intro">
+        Projects. Systems. Ideas. Built with reliability in mind.
+      </p>
+
+      <p class="intro">
+        A place where I bring together projects, ideas and experience around
+        cloud infrastructure, automation and reliable systems.
+      </p>
+
+      <p class="intro">
+        I build systems that are simple to operate, reliable by design
+        and able to evolve over time.
+      </p>
+
+      <div class="links">
+        <a href="https://github.com/aakkon" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/pere-cortijos-navarro-ab0b01172/" target="_blank">LinkedIn</a>
+        <a href="mailto:pere.cortijos83@gmail.com">Contact</a>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>About</h2>
+
+      <p>
+        My name is Pere Cortijos.
+      </p>
+
+      <p>
+        Beyond technology itself, I am particularly interested in connecting
+        people, processes and technology to create solutions that are
+        maintainable, scalable and useful.
+      </p>
+
+      <p>
+        AAKKON is not a company. It is my personal space to share projects,
+        ideas, experiments and lessons learned while building systems.
+      </p>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+
+      <div class="project-grid">
+
+        <article class="project-card" data-project="personal-lab">
+          <h3>Personal Lab</h3>
+          <p>DevOps laboratory for cloud, containers, automation and safe experimentation.</p>
+          <span>In development</span>
+        </article>
+
+        <article class="project-card" data-project="pere-vault">
+          <h3>Pere Vault</h3>
+          <p>Personal cloud storage concept focused on control, structure and long-term reliability.</p>
+          <span>Private concept</span>
+        </article>
+
+        <article class="project-card" data-project="autogestor">
+          <h3>AutoGestor</h3>
+          <p>Internal automation-first project focused on maintainable systems.</p>
+          <span>Private development</span>
+        </article>
+
+        <article class="project-card" data-project="bench-journal">
+          <h3>Bench Journal</h3>
+          <p>Automated log collection, event classification and Excel reporting for test bench environments.</p>
+          <span>Public repository</span>
+        </article>
+
+        <article class="project-card" data-project="filepilot">
+          <h3>FilePilot</h3>
+          <p>Desktop tool for smart file operations, batch renaming and reusable workflow profiles.</p>
+          <span>Public repository</span>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="exploring">
+      <h2>Current Explorations</h2>
+
+      <ul>
+        <li>Secure Data Exchange (SDE)</li>
+        <li>Cloud-native architectures</li>
+        <li>Infrastructure as Code at scale</li>
+        <li>Data pipelines and observability</li>
+        <li>Technical coordination and leadership</li>
+      </ul>
+    </section>
+
+    <div class="modal" id="projectModal">
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose">×</button>
+        <p class="modal-label" id="modalStatus"></p>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDescription"></p>
+        <a id="modalLink" href="#" target="_blank">Open repository</a>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>AAKKON · Built with curiosity, discipline and reliability.</p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
