@@ -15,8 +15,6 @@
 </head>
 
 <body>
-  <canvas id="network-bg"></canvas>
-
   <main class="page">
 
     <header class="topbar">
@@ -32,32 +30,26 @@
     </header>
 
     <section class="hero">
-      <img class="hero-logo" src="assets/logo-main-transparent.png" alt="AAKKON logo" />
+      <img class="hero-logo" src="assets/logo-main-transparent-cropped.png" alt="AAKKON logo" />
 
       <p class="eyebrow">
-        Building, Exploring and Sharing
+        DevOps & Automation Engineer
       </p>
 
-      <h1>Systems that evolve. Foundations that last.</h1>
+      <h1>Reliable cloud systems, engineered for long-term operation.</h1>
 
       <p class="intro main-intro">
-        Projects. Systems. Ideas. Built with reliability in mind.
+        Infrastructure, automation and operational systems designed to remain maintainable and easy to run.
       </p>
 
-      <p class="intro">
-        A place where I bring together projects, ideas and experience around
-        cloud infrastructure, automation and reliable systems.
-      </p>
-
-      <p class="intro">
-        I build systems that are simple to operate, reliable by design
-        and able to evolve over time.
+      <p class="intro hero-description">
+        A personal portfolio for architecture, DevOps and automation work, with direct access to the most relevant public repositories.
       </p>
 
       <div class="links">
-        <a href="https://github.com/aakkon" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/pere-cortijos-navarro-ab0b01172/" target="_blank">LinkedIn</a>
-        <a href="mailto:pere.cortijos83@gmail.com">Contact</a>
+        <a class="button primary" href="https://github.com/aakkon" target="_blank">View GitHub</a>
+        <a class="button" href="https://www.linkedin.com/in/pere-cortijos-navarro-ab0b01172/" target="_blank">LinkedIn</a>
+        <a class="button" href="mailto:pere.cortijos83@gmail.com">Contact</a>
       </div>
     </section>
 
@@ -65,23 +57,18 @@
       <h2>About</h2>
 
       <p>
-        My name is Pere Cortijos.
+        Pere Cortijos is focused on connecting people, processes and technology to create solutions that are maintainable, scalable and useful.
       </p>
 
       <p>
-        Beyond technology itself, I am particularly interested in connecting
-        people, processes and technology to create solutions that are
-        maintainable, scalable and useful.
-      </p>
-
-      <p>
-        AAKKON is not a company. It is my personal space to share projects,
-        ideas, experiments and lessons learned while building systems.
+        AAKKON is not a company. It is a personal space for sharing projects,
+        ideas, experiments and lessons learned from building systems.
       </p>
     </section>
 
     <section id="projects" class="projects">
       <h2>Projects</h2>
+      <p class="section-note">Selected work and live concepts. Public repositories are marked for direct access.</p>
 
       <div class="project-grid">
 
@@ -130,9 +117,9 @@
       </ul>
     </section>
 
-    <div class="modal" id="projectModal">
+    <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDescription" aria-hidden="true">
       <div class="modal-content">
-        <button class="modal-close" id="modalClose">×</button>
+        <button class="modal-close" id="modalClose" aria-label="Close project details">×</button>
         <p class="modal-label" id="modalStatus"></p>
         <h3 id="modalTitle"></h3>
         <p id="modalDescription"></p>

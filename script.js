@@ -42,9 +42,11 @@ const modalStatus = document.getElementById("modalStatus");
 const modalDescription = document.getElementById("modalDescription");
 const modalLink = document.getElementById("modalLink");
 const modalClose = document.getElementById("modalClose");
+const activeElementBeforeModal = { current: null };
 
 document.querySelectorAll(".project-card").forEach((card) => {
   card.addEventListener("click", () => {
+    activeElementBeforeModal.current = document.activeElement;
     const project = projects[card.dataset.project];
 
     modalTitle.textContent = project.title;
@@ -58,52 +60,33 @@ document.querySelectorAll(".project-card").forEach((card) => {
       modalLink.classList.add("hidden");
     }
 
+    modal.setAttribute("aria-hidden", "false");
     modal.classList.add("is-open");
+    modalClose.focus();
   });
 });
 
-modalClose.addEventListener("click", () => {
+function closeModal() {
   modal.classList.remove("is-open");
-});
+  modal.setAttribute("aria-hidden", "true");
+  if (activeElementBeforeModal.current) {
+    activeElementBeforeModal.current.focus();
+  }
+}
+
+modalClose.addEventListener("click", closeModal);
 
 modal.addEventListener("click", (event) => {
   if (event.target === modal) {
-    modal.classList.remove("is-open");
+    closeModal();
   }
 });
 
-const canvas = document.getElementById("network-bg");
-const ctx = canvas.getContext("2d");
-
-let width;
-let height;
-let lines = [];
-let pulses = [];
-
-function resizeCanvas() {
-  width = canvas.width = window.innerWidth;
-  height = canvas.height = window.innerHeight;
-
-  lines = Array.from({ length: 8 }, () => createLine());
-  pulses = [];
-}
-
-function randomPoint() {
-  return {
-    x: Math.random() * width,
-    y: Math.random() * height
-  };
-}
-
-function createLine() {
-  return {
-    from: randomPoint(),
-    to: randomPoint(),
-    progress: 0,
-    speed: 0.003 + Math.random() * 0.006,
-    alpha: 0.16 + Math.random() * 0.22
-  };
-}
+window.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && modal.classList.contains("is-open")) {
+    closeModal();
+  }
+});
 
 function draw() {
   ctx.clearRect(0, 0, width, height);
@@ -166,8 +149,3 @@ function draw() {
 
   requestAnimationFrame(draw);
 }
-
-window.addEventListener("resize", resizeCanvas);
-
-resizeCanvas();
-draw();
