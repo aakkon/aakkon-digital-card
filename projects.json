@@ -1,0 +1,58 @@
+[
+  {
+    "id": "personal-lab",
+    "title": "Personal Lab",
+    "summary": "DevOps laboratory for cloud, containers, automation and safe experimentation.",
+    "description": "A personal DevOps laboratory used to design, test and understand cloud infrastructure, containers, automation workflows and reproducible environments without fear of breaking things.",
+    "status": "In development",
+    "link": null
+  },
+  {
+    "id": "pere-vault",
+    "title": "Pere Vault",
+    "summary": "Personal cloud storage concept focused on control, structure and long-term reliability.",
+    "description": "A personal cloud storage initiative focused on structure, controlled access, long-term reliability and practical use for personal documents, photos and shared household needs.",
+    "status": "Private concept",
+    "link": null
+  },
+  {
+    "id": "autogestor",
+    "title": "AutoGestor",
+    "summary": "Internal automation-first project focused on maintainable systems.",
+    "description": "An internal automation-first project focused on building maintainable systems and reducing operational overhead. The repository remains private while the application is under active development and will be evaluated for publication when ready.",
+    "status": "Private internal development",
+    "link": null
+  },
+  {
+    "id": "bench-journal",
+    "title": "Bench Journal",
+    "summary": "Automated log collection, event classification and Excel reporting for test bench environments.",
+    "description": "A Python tool that collects machine log files from SMB shares, parses relevant events, classifies them by type and generates Excel reports for test bench environments.",
+    "status": "Public repository",
+    "link": "https://github.com/aakkon/bench-journal"
+  },
+  {
+    "id": "filepilot",
+    "title": "FilePilot",
+    "summary": "Desktop tool for smart file operations, batch renaming and reusable workflow profiles.",
+    "description": "A desktop application designed to simplify file-management workflows through batch renaming, pattern-based transformations, activity tracking and reusable naming profiles.",
+    "status": "Public repository",
+    "link": "https://github.com/aakkon/filepilot"
+  },
+  {
+    "id": "exporter",
+    "title": "Exporter",
+    "summary": "Hourly time-series data exporter from InfluxDB to S3 using the claim-check pattern, orchestrated by Airflow.",
+    "description": "Hourly time-series data exporter from InfluxDB to S3 and SQS using the claim-check pattern, orchestrated by Airflow with gap detection and manifest-based idempotency.",
+    "status": "Public repository",
+    "link": "https://github.com/aakkon/exporter"
+  },
+  {
+    "id": "aws-cost-guardian",
+    "title": "AWS Cost Guardian",
+    "summary": "AWS cost monitoring tool with FastAPI, PostgreSQL and Docker with threshold alerts.",
+    "description": "AWS cost monitoring tool with FastAPI, PostgreSQL and Docker. Automatic ingestion via AWS Cost Explorer with threshold alerts.",
+    "status": "Public repository",
+    "link": "https://github.com/aakkon/aws-cost-guardian"
+  }
+]
