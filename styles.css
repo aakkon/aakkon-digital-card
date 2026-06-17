@@ -375,7 +375,7 @@ h1,
 
 @media (max-width: 700px) {
   body {
-    background: linear-gradient(180deg, #060606 0%, #080808 40%, #030303 100%);
+    background: #000000;
   }
 
   .page {
